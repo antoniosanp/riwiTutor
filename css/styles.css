@@ -1,0 +1,30 @@
+header{
+    background-color: #171e4a;
+
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer"
+    ;
+    gap: 5px;
+}
+
+.sidebar{
+    background-color: lightcyan;
+    grid-area: sidebar;
+}
+
+main{
+    background-color: lightblue;
+    grid-area: main;
+    height: 100vh;
+}
+
+footer{
+    background-color: gray;
+    grid-area: footer;
+}
