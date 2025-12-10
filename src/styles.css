@@ -9,34 +9,3 @@
 
 }
 
-header{
-    background-color: var(--main-color);
-    grid-area: header;
-}
-
-body{
-    display: grid;
-    grid-template-areas: 
-    "header header header header"
-    "sidebar main main main"
-    "footer footer footer footer"
-    ;
-    gap: 5px;
-}
-
-.sidebar{
-    background-color: var(--moraditoClaro);
-    grid-area: sidebar;
-    border: red solid 1px 4px 8px 16px;
-}
-
-main{
-    background-color: var(--verde);
-    grid-area: main;
-    height: 100vh;
-}
-
-footer{
-    background-color: var(--azulClarito);
-    grid-area: footer;
-}
