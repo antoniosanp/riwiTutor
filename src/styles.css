@@ -27,6 +27,7 @@ body{
 .sidebar{
     background-color: var(--moraditoClaro);
     grid-area: sidebar;
+    border: red solid 1px 4px 8px 16px;
 }
 
 main{
