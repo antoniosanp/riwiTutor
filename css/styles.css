@@ -1,30 +1,41 @@
-header{
-    background-color: #171e4a;
+:root{
+    --main-color: #171e4a; /*el moraito de oscuro de riwi */
+    --azulClarito: #786cfc; /*un azul como moradito claro */
+    --moraditoClaro: #6c5cfc; /*un morado como azulito claro */
+    --rojo: #ca3120; /*un rojo*/
+    --verde: #6cb464; /*... un verde */
+    --grisBlanco: #dee2e6 /* como un gris blanquito*/
 
+
+}
+
+header{
+    background-color: var(--main-color);
+    grid-area: header;
 }
 
 body{
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "sidebar main main"
-    "footer footer footer"
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer"
     ;
     gap: 5px;
 }
 
 .sidebar{
-    background-color: lightcyan;
+    background-color: var(--moraditoClaro);
     grid-area: sidebar;
 }
 
 main{
-    background-color: lightblue;
+    background-color: var(--verde);
     grid-area: main;
     height: 100vh;
 }
 
 footer{
-    background-color: gray;
+    background-color: var(--azulClarito);
     grid-area: footer;
 }
