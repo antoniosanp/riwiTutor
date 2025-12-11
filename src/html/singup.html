@@ -7,37 +7,62 @@
     <link rel="stylesheet" href="../css/singupStyles.css">
 </head>
 <body>
+    <div class="backgraund">
+        <div class="main-window">
 
-    <div class="main-window">
-
-        <div class="fondoContenedor">
-            soy el fondo
-        </div>
-        <div class="formContenedor">
-            <div class="formHeader">
-                <p>¿ya tienes cuenta? <a href="login.html">iniciar sesión</a></p>
+            <div class="fondoContenedor">
+                soy el fondo
             </div>
-            <div class="formBody">
-                <h1>Registrarse</h1>
-                <div class="btnGoogleContenedor">
-                    <img src="../img/google-color-svgrepo-com.svg" width="24" height="24" alt="Google icon">
-                    <h2 class="continuarGoogle">  Continuar con cuenta de Google</h2>
+            <div class="formContenedor">
+                <div class="formHeader">
+                    <p>¿ya tienes cuenta? <a href="login.html">iniciar sesión</a></p>
                 </div>
-                <hr>
+                <div class="formBody">
+                    <h1>Registrarse</h1>
+                    <div class="btnGoogleContenedor">
+                        <img src="../img/google-color-svgrepo-com.svg" width="24" height="24" alt="Google icon">
+                        <h2 class="continuarGoogle">  Continuar con cuenta de Google</h2>
+                    </div>
+                    <hr>
 
-                <div class="formForm">
-                    <form action="">
-
-                        <label for="nombre">Nombre:
-                            <input type="text">
-                        </label>
-
-                        <label for="email">Email: 
-                            <input type="email" name="" id="">
-                        </label>
+                    <div class="formForm">
+                        <form action="">
 
 
-                    </form>
+                            <label aria-required="true" for="email">Email: 
+                                <input type="email" name="" id="">
+                            </label>
+
+
+                            <label for="password">Contraseña:
+                                <input  required type="password">
+                            </label>
+
+
+                            <label for="password"> Confirmar Contraseña:
+                                <input  required type="password">
+                            </label>
+
+                            <label for="name"> Nombre completo:
+                                <input type="text">
+                            </label>
+
+                            <label for="userName"> Nombre de usuario:
+                                <input type="text">
+                            </label>
+
+                            <label for="fechaNacimiento">Fecha de nacimiento:
+                                <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                            </label>
+
+                            <div class="btnConfirmar">
+                                Confirmar
+                            </div>
+                            <hr>
+
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,69 @@
+    /*
+    <div class="main-window">
+
+        <div class="fondoContenedor">
+            soy el fondo
+        </div>
+        <div class="formContenedor">
+            <div class="formHeader">
+                <p>¿ya tienes cuenta? <a href="login.html">iniciar sesión</a></p>
+            </div>
+            <div class="formBody">
+                <h1>Registrarse</h1>
+                <div class="btnGoogleContenedor">
+                    <img src="../img/google-color-svgrepo-com.svg" width="24" height="24" alt="Google icon">
+                    <h2 class="continuarGoogle">  Continuar con cuenta de Google</h2>
+                </div>
+                <hr>
+
+                <div class="formForm">
+                    <form action="">
+
+
+                        <label aria-required="true" for="email">Email: 
+                            <input type="email" name="" id="">
+                        </label>
+
+
+                        <label for="password">Contraseña:
+                            <input  required type="password">
+                        </label>
+
+
+                        <label for="password"> Confirmar Contraseña:
+                            <input  required type="password">
+                        </label>
+
+                        <label for="name"> Nombre completo:
+                            <input type="text">
+                        </label>
+
+                        <label for="userName"> Nombre de usuario:
+                            <input type="text">
+                        </label>
+
+                        <label for="fechaNacimiento">Fecha de nacimiento:
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                        </label>
+
+                        <div class="btnConfirmar">
+                            Confirmar
+                        </div>
+                        <hr>
+                        */
+.main-window{
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+    height: 100vh;
+
+}
+
+.backgraund{
+    padding: 200px;
+    background-image:url("../img/hermosa-via-lactea-en-el-cielo-nocturno.jpg");
+    background-size: cover;
+
+    height: 100vh;
+}
