@@ -4,24 +4,30 @@
     padding: 0;
 }
 
-body {
+.tutorial-section {
     padding: 2%;
 }
 
 .text-opacity {
     opacity: 40%;
 }
-
+header{
+    position: fixed;
+    z-index: 999;
+}
 /* tutorial list */
+.tutorial-section {
+    padding: 0 20%;
+}
 .tutorial-section h2 {
     font-size: 54px;
 }
 
 .tutorial-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: auto;
-    justify-items: center;
+    place-items: center;
     align-items: stretch;
     row-gap: 16px;
 }
@@ -63,6 +69,17 @@ body {
     padding: 1rem 2rem;
     border-radius: 8px;
     border: 1px solid rgba(128, 128, 128, 0.171);
+}
+.tutorial-card:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+    box-shadow: ();
 }
 
 .tutorial-card>.tutorial-description {
