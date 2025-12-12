@@ -19,11 +19,13 @@
 
 
 }
-/*main{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
+main{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding:  70px 70px 70px 70px;
+
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #dee2e6 0%, #6c5cfc  100%);
@@ -35,6 +37,7 @@ body {
     min-height: 100vh;
     gap: 0;
     padding: var(--naranja-panza) ;
+    border-radius: 100%;
 }
 .login-container {
     display: flex;
