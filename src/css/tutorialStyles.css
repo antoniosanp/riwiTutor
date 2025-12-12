@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2%;
+}
+
+.text-opacity {
+    opacity: 40%;
+}
+
+/* tutorial list */
+.tutorial-section h2 {
+    font-size: 54px;
+}
+
+.tutorial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: stretch;
+    row-gap: 16px;
+}
+
+.tutorial-list-section {
+    margin-top: 2rem;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 30px;
+}
+
+.search-section span {
+    width: fit-content;
+    text-align: center;
+    font-size: .8rem;
+    padding: .5rem;
+    background-color: var(--azulClarito);
+    border-radius: 8px;
+}
+
+.search-section input {
+    width: 90%;
+    padding: .3rem;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+}
+
+
+.tutorial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+.tutorial-card>.tutorial-description {
+    height: 25%;
+    font-size: .75rem;
+}
+
+.tutorial-card>p {
+    font-size: 2rem;
+}
+
+.tutorial-card .card-header {
+    font-size: .85rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.tutorial-card .card-header div span {
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+
+
+.tutorial-card .card-header>div {
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid var(--azulClarito);
+    padding: .3rem 1rem;
+    border-radius: 999px;
+}
+
+.tutorial-card .card-header>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulClarito);
+    padding: .3rem 1rem;
+    border-radius: 999px;
+}
+
+
+
+.tutorial-user-discord,
+.tutorial-card .tutorial-schedule {
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+}
+
+.tutorial-user-discord i {
+    font-size: 1.2rem;
+    color: #7289DA;
+}
+
+
+@media (min-width: 768px) {
+    .search-section {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
