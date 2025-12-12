@@ -4,8 +4,36 @@
     --moraditoClaro: #6c5cfc; /*un morado como azulito claro */
     --rojo: #ca3120; /*un rojo*/
     --verde: #6cb464; /*... un verde */
-    --grisBlanco: #dee2e6 /* como un gris blanquito*/
-
+    --grisBlanco: #dee2e6;/* como un gris blanquito*/
+    --border-color: #E0E0E0;
 
 }
 
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: var(--text-dark);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 61, 0.1);
+}
