@@ -14,7 +14,8 @@
     --text-dark: #333333;
     --text-light: #666666;
     --blanco-zorro: #f2f2e1;
-    --naranja-panza: #ffbaab
+    --naranja-panza: #ffbaab;
+    --morado-mejor: #d1b4fd;
 
 
 
@@ -23,44 +24,64 @@ main{
     /*display: flex;*/
     /*justify-content: center;*/
     /*align-items: center;*/
-    padding:  70px 70px 70px 70px;
+    padding:  100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #dee2e6 0%, #6c5cfc  100%);
+    background: linear-gradient(135deg, #dee2e6 0%, #d1c1e5 100%);
     min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .login-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    min-height: 100vh;
+    width: 67%;
     gap: 0;
-    padding: var(--naranja-panza) ;
-    border-radius: 100%;
+
+    background: var(--morado-mejor);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: var(--naranja-panza) 100px 100px 100px 100px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 .login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    background: var(--grisBlanco);
+    padding: 20px;
+    background: var(--morado-mejor);
+
     backdrop-filter: blur(10px);
+    border-radius: 20px 20px 20px 20px;
+
+
 }
 
 .login-container form {
     width: 100%;
     max-width: 400px;
-}
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: var(--grisBlanco);
 
+
+}
 .logo img {
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 6));
 
 }
 
 form h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: var(--text-dark);
     margin-bottom: 30px;
     font-weight: 700;
@@ -178,6 +199,7 @@ form h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0 20px 20px 0;
 }
 
 /* Responsive: cambia a una columna en pantallas pequeñas */
