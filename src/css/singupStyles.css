@@ -1,56 +1,4 @@
-    /*
-    <div class="main-window">
 
-        <div class="fondoContenedor">
-            soy el fondo
-        </div>
-        <div class="formContenedor">
-            <div class="formHeader">
-                <p>¿ya tienes cuenta? <a href="login.html">iniciar sesión</a></p>
-            </div>
-            <div class="formBody">
-                <h1>Registrarse</h1>
-                <div class="btnGoogleContenedor">
-                    <img src="../img/google-color-svgrepo-com.svg" width="24" height="24" alt="Google icon">
-                    <h2 class="continuarGoogle">  Continuar con cuenta de Google</h2>
-                </div>
-                <hr>
-
-                <div class="formForm">
-                    <form action="">
-
-
-                        <label aria-required="true" for="email">Email: 
-                            <input type="email" name="" id="">
-                        </label>
-
-
-                        <label for="password">Contraseña:
-                            <input  required type="password">
-                        </label>
-
-
-                        <label for="password"> Confirmar Contraseña:
-                            <input  required type="password">
-                        </label>
-
-                        <label for="name"> Nombre completo:
-                            <input type="text">
-                        </label>
-
-                        <label for="userName"> Nombre de usuario:
-                            <input type="text">
-                        </label>
-
-                        <label for="fechaNacimiento">Fecha de nacimiento:
-                            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
-                        </label>
-
-                        <div class="btnConfirmar">
-                            Confirmar
-                        </div>
-                        <hr>
-                        */
 .main-window{
 
     display: grid;
@@ -58,6 +6,11 @@
     background-color: white;
     height: 100vh;
 
+}
+
+.formHeader{
+    display: flex;
+    justify-content: end;
 }
 
 .backgraund{
@@ -72,28 +25,140 @@
     background-image: url("../img/mascota.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* recomendable */
+    background-position:  40% center;  
 
 }
 
-.formFormContenedor{
-    padding: 20px;
+/* Contenedor interno */
+.formFormContenedor {
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    padding: 40px;
+    gap: 20px;
 }
-.btnGoogleContenedor{
+
+/* Título */
+.formBody h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Botón Google */
+.btn-google {
     display: flex;
     justify-content: center;
-    border: 1px solid darkblue;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid #d0d7de;
+    background-color: #fff;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: background-color .2s, border-color .2s;
 }
 
-form{
-   
+.btn-google:hover {
+    background-color: #f6f8fa;
+    border-color: #afb8c1;
+}
+
+/* Formularios */
+.register-form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 15px;
+}
+
+.register-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register-form input {
+    height: 34px;
+    padding: 6px 10px;
+
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 14px;
+
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.register-form input:focus {
+    border-color: #0969da;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(9, 105, 218, .2);
+}
+
+/* Botón Confirmar */
+.btnConfirmar {
+    height: 40px;
+    border: none;
+
+    background-color: #2da44e;
+    color: white;
+
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .2s;
+}
+
+.btnConfirmar:hover {
+    background-color: #2c974b;
+}
+
+/* --- MOBILE / SMALL SCREENS --- */
+@media (max-width: 900px) {
+
+    /* El fondo ocupa todo, sin padding que empuja el contenido */
+    .backgraund {
+        padding: 20px;
+        height: auto; /* deja que crezca naturalmente */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* El grid se convierte en una sola columna */
+    .main-window {
+        grid-template-columns: 1fr;
+        height: auto;
+        background-color: transparent; /* desaparece el panel blanco lateral */
+    }
+
+    /* Ocultar la imagen de la mascota */
+    .fondoContenedor {
+        display: none;
+    }
+
+    /* Centrar y estilizar el formulario */
+    .formFormContenedor {
+        background-color: rgba(255, 255, 255, 0.90);
+        padding: 30px;
+        border-radius: 12px;
+        max-width: 380px;
+        margin: 0 auto;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .formHeader {
+        justify-content: center;
+    }
 }
